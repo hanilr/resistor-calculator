@@ -16,7 +16,7 @@ When you run this program this screen first you will see.
 
 
 ## Help Screen
-If you need help or wonder how it works, this is the screen you will see.![Uploading main.PNG…]()
+If you need help or wonder how it works, this is the screen you will see.
 
 ![help](https://user-images.githubusercontent.com/77579421/116830015-25b2ca00-abb0-11eb-91b8-2660b2b2e5a5.PNG)
 
