@@ -1,120 +1,66 @@
 from tkinter import PhotoImage
 from tkinter import *
-import webbrowser
 import platform
-import os
 
-# Variables #
-bg_button = "#303030"
-bg_color = "#393939"
-fg_color = "#e9e9e9"
-# --------- #
+from pref_def import *
+from sys_func import *
 
 # Main Screen Preferences #
 main_screen = Tk()
 main_screen.configure(bg=bg_color)
-main_screen.geometry("752x352")
+main_screen.geometry(main_scr)
 main_screen.resizable(FALSE, FALSE)
 main_screen.title("Resistor Calculator")
 if "Windows" in platform.system():
     main_screen.iconbitmap("images/ohm.ico")
 # ----------------------- #
 
-# Canvas Class #
-class canvas_create:
-    def __init__(self, pos_x, pos_y, obj_height, obj_width):
-        self.pos_x = pos_x
-        self.pos_y = pos_y
-        self.obj_height = obj_height
-        self.obj_width = obj_width
+# Make Choice #
+def for_four():
+    main_screen.destroy()
+    open_four()
 
-    def canvas_start(self):
-        obj_canvas = Canvas(bd=0, bg=fg_color)
-        obj_canvas.pack()
-        obj_canvas.place(x=self.pos_x, y=self.pos_y, height=self.obj_height, width=self.obj_width)
-# ------------ #
+def for_five():
+    main_screen.destroy()
+    open_five()
 
-# Main Screen Select Button Objects #
-def make_band_select():
-    four_band_button = Button(bd=0, bg=bg_button, fg=fg_color, text="Four Band", activebackground=bg_button, activeforeground=fg_color, command=lambda: no_window_left("four_band.py"))
-    four_band_button.pack()
-    four_band_button.place(x=70, y=270, height=40, width=140)
+def for_six():
+    main_screen.destroy()
+    open_six()
 
-    five_band_button = Button(bd=0, bg=bg_button, fg=fg_color, text="Five Band", activebackground=bg_button, activeforeground=fg_color, command=lambda: no_window_left("five_band.py"))
-    five_band_button.pack()
-    five_band_button.place(x=307, y=270, height=40, width=140)
+def for_help():
+    main_screen.destroy()
+    open_help()
+# ----------- #
 
-    six_band_button = Button(bd=0, bg=bg_button, fg=fg_color, text="Six Band", activebackground=bg_button, activeforeground=fg_color, command=lambda: no_window_left("six_band.py"))
-    six_band_button.pack()
-    six_band_button.place(x=534, y=270, height=40, width=140)
+# Objects Preferences #
+write_label("RESISTOR CALCULATOR", "center", 20, bg_color, fg_color, 0, 20, 40, 752)
+draw_line(0, 60, 2, 752, fg_color) # Title Line
 
-    def no_window_left(open_band):
-        main_screen.destroy()
-        if "Windows" in platform.system():
-            os.system("python " + open_band)
-        elif "Linux" in platform.system():
-            os.system("python3 " + open_band)
-# --------------------------------- #
+write_label("FOUR BAND", "center", 15, bg_color, fg_color, 90, 90, 40, 120)
+draw_line(70, 130, 2, 160, fg_color)# Mini Title Line
+touch_button("Four Band", bg_button, fg_color, for_four, 60, 145, 50, 180)
 
-# Options Properties # 
-option_one_text = "* There are four color choices.\n* There are twelve different colors.\n* After selecting the\ncolors, press enter and the\nresult will appear in the result section."
-option_two_text = "* There are five color choices.\n* There are twelve different colors.\n* After selecting the\ncolors, press enter and the\nresult will appear in the result section."
-option_three_text = "* There are six color choices.\n* There are twelve different colors.\n* After selecting the\ncolors, press enter and the\nresult will appear in the result\nsection and the value per degree will\nappear in the 1 ° C section."
-# ------------------ #
+touch_button("Help", bg_button, fg_color, for_help, 0, 0, 30, 80)
+draw_line(0, 30, 1, 80, bg_color) # Help Button Bottom Line
+draw_line(80, 0, 30, 1, bg_color) # Help Button Right Line
 
-# Main Screen Select Button Objects #
-make_band_select()
+write_label("FIVE BAND", "center", 15, bg_color, fg_color, 316, 90, 40, 120)
+draw_line(296, 130, 2, 160, fg_color)# Mini Title Line
+touch_button("Five Band", bg_button, fg_color, for_five, 286, 145, 50, 180)
 
-title_label = Label(bg=bg_color, fg=fg_color, font=("", 20), text="RESISTOR CALCULATOR")
-title_label.pack()
-title_label.place(x=0, y=20, height=52, width=752)
+write_label("SIX BAND", "center", 15, bg_color, fg_color, 542, 90, 40, 120)
+draw_line(532, 130, 2, 140, fg_color)# Mini Title Line
+touch_button("Six Band", bg_button, fg_color, for_six, 512, 145, 50, 180)
 
-canvas_create(0, 70, 2, 752).canvas_start() # Top Canvas
+touch_button("@hanilr", bg_button, fg_color, signature_link, 0, 230, 30, 75)
+draw_line(0, 230, 1, 75, bg_color) # Signature Button Top Line
+draw_line(74, 230, 30, 1, bg_color) # Signature Button Right Line
 
-option_one_title = Label(justify=CENTER, bg=bg_color, fg=fg_color, font=("", 15), text="Four Band")
-option_one_title.pack()
-option_one_title.place(x=90, y=102, height=25, width=100)
-
-canvas_create(80, 130, 2, 120).canvas_start() # Option One Canvas
-
-option_one = Label(justify=CENTER, bg=bg_color, fg=fg_color, text=option_one_text)
-option_one.pack()
-option_one.place(x=40, y=140)
-
-option_two_title = Label(justify=CENTER, bg=bg_color, fg=fg_color, font=("", 15), text="Five Band")
-option_two_title.pack()
-option_two_title.place(x=322, y=102, height=25, width=100)
-
-canvas_create(317, 130, 2, 120).canvas_start() # Option Two Canvas
-
-option_two = Label(justify=CENTER, bg=bg_color, fg=fg_color, text=option_two_text)
-option_two.pack()
-option_two.place(x=277, y=140)
-
-option_three_title = Label(justify=CENTER, bg=bg_color, fg=fg_color, font=("", 15), text="Six Band")
-option_three_title.pack()
-option_three_title.place(x=554, y=102, height=25, width=100)
-
-canvas_create(544, 130, 2, 120).canvas_start()
-
-option_three = Label(justify=CENTER, bg=bg_color, fg=fg_color, text=option_three_text)
-option_three.pack()
-option_three.place(x=504, y=140)
-
-copyright_sign = Button(bd=0, bg=bg_color, fg=fg_color, justify=CENTER, activebackground=bg_button, activeforeground=fg_color, text="@hanilr", command=lambda: webbrowser.open("https://github.com/hanilr/"))
-copyright_sign.pack()
-copyright_sign.place(x=0, y=322, height=30, width=60)
-
-canvas_create(0, 320, 2, 60).canvas_start() # Top Of Copyright Signature
-canvas_create(60, 320, 32, 2).canvas_start() # Right Of Copyright Signature
-
-feedback_button = Button(bd=0, bg=bg_color, fg=fg_color, justify=CENTER, activebackground=bg_button, activeforeground=fg_color, text="Feedback", command=lambda: webbrowser.open("https://github.com/hanilr/Resistor-Calculator/issues"))
-feedback_button.pack()
-feedback_button.place(x=682, y=322, height=30, width=70)
-
-canvas_create(682, 320, 2, 70).canvas_start() # Top Of Feedback
-canvas_create(682, 320, 32, 2).canvas_start() # Left Of Feedback
-# --------------------------------- #
+touch_button("Feedback", bg_button, fg_color, feedback_link, 677, 230, 30, 75)
+draw_line(677, 230, 1, 75, bg_color) # Feedback Button Top Line
+draw_line(677, 230, 30, 1, bg_color) # Feedback Button Left Line
+# ------------------- #
 
 # Mainloops #
 main_screen.mainloop()
