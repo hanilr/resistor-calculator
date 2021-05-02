@@ -12,25 +12,31 @@ having some information about what it is like before buying some tools.
 ## Main Screen
 When you run this program this screen first you will see.
 
-![main](https://user-images.githubusercontent.com/77579421/115989941-7a12e400-a5c9-11eb-9de5-524c05ef71d2.png)
+![main](https://user-images.githubusercontent.com/77579421/116830009-2186ac80-abb0-11eb-9329-8090aec20faa.PNG)
+
+
+## Help Screen
+If you need help or wonder how it works, this is the screen you will see.![Uploading main.PNG…]()
+
+![help](https://user-images.githubusercontent.com/77579421/116830015-25b2ca00-abb0-11eb-91b8-2660b2b2e5a5.PNG)
 
 
 ## Four Band
 If your resister has four band you will use that.
 
-![four_band](https://user-images.githubusercontent.com/77579421/115989951-85660f80-a5c9-11eb-99a1-224edcdc5c8d.png)
+![four_band](https://user-images.githubusercontent.com/77579421/116830020-2b101480-abb0-11eb-8390-d464e75bb004.PNG)
 
 
 ## Five Band
 If your resister has five band you will use that.
 
-![five_band](https://user-images.githubusercontent.com/77579421/115989956-88610000-a5c9-11eb-87ba-a51983c14b2c.png)
+![five_band](https://user-images.githubusercontent.com/77579421/116830027-2ea39b80-abb0-11eb-8e5a-8db84a98f6c3.PNG)
 
 
 ## Six Band
 If your resister has six band you will use that.
 
-![six_band](https://user-images.githubusercontent.com/77579421/115989957-8ac35a00-a5c9-11eb-8fe7-c638414e2954.png)
+![six_band](https://user-images.githubusercontent.com/77579421/116830033-319e8c00-abb0-11eb-965f-7c49fba94030.PNG)
 
 
 # Running
