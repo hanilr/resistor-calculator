@@ -40,6 +40,11 @@ If your resister has six band you will use that.
 
 
 # Running
-* Windows: ` python main.py `
+### Windows
+Run: ` python main.py `
 
-* Linux: ` python3 main.py `
+### Linux: 
+* Ubuntu `sudo apt install python3-tk`
+* Fedora `sudo dnf install python3-tkinter`
+* 
+* Run: ` python3 main.py `
