@@ -1,9 +1,16 @@
+# RESISTOR CALCULATOR (4BAND) #
 from tkinter import PhotoImage
 from tkinter import *
 import platform
 
-from pref_def import *
-from sys_func import *
+# DEFINE PARENT DIR AND ACCESS THE LIBRARY #
+import os, sys
+currentdir = os.path.dirname(os.path.realpath(__file__))
+parentdir = os.path.dirname(currentdir)
+sys.path.append(parentdir)
+# ---------------------------------------- #
+
+from lib.util import *
 
 # Make Choice #
 def for_four():
@@ -70,3 +77,4 @@ value_var.set("Result")
 # Mainloops #
 main_screen.mainloop()
 # --------- #
+# MADE BY @hanilr #

@@ -1,9 +1,9 @@
+# RESISTOR CALCULATOR (MAIN) #
 from tkinter import PhotoImage
 from tkinter import *
 import platform
 
-from pref_def import *
-from sys_func import *
+from lib.util import *
 
 # Main Screen Preferences #
 main_screen = Tk()
@@ -65,3 +65,4 @@ draw_line(677, 230, 30, 1, bg_color) # Feedback Button Left Line
 # Mainloops #
 main_screen.mainloop()
 # --------- #
+# MADE BY @hanilr #

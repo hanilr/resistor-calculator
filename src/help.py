@@ -1,9 +1,16 @@
+# RESISTOR CALCULATOR (HELP) #
 from tkinter import PhotoImage
 from tkinter import *
 import platform
 
-from pref_def import *
-from sys_func import *
+# DEFINE PARENT DIR AND ACCESS THE LIBRARY #
+import os, sys
+currentdir = os.path.dirname(os.path.realpath(__file__))
+parentdir = os.path.dirname(currentdir)
+sys.path.append(parentdir)
+# ---------------------------------------- #
+
+from lib.util import *
 
 # Main Screen Preferences #
 main_screen = Tk()
@@ -63,3 +70,4 @@ draw_line(687, 480, 30, 1, bg_color) # Feedback Button Left Line
 # Mainloops #
 main_screen.mainloop()
 # --------- #
+# MADE BY @hanilr #

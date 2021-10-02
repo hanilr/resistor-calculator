@@ -7,7 +7,8 @@ Resistor calculator written in python.
 # About The Project
 If you don't have a multimeter and need to measure a resistor, this program is for you.
 My aim in doing this project is for those who are new to the field of electricity or electronics.
-having some information about what it is like before buying some tools.
+Having some information about what it is like before buying some tools.
+I'm currently use tkinter because I'm new on oop so thats my oop test project. I'll continue with qt after that project.
 
 ## Main Screen
 When you run this program this screen first you will see.

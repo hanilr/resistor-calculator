@@ -1,9 +1,10 @@
+# RESISTOR CALCULATOR (UTILITY) #
 from tkinter import *
 import webbrowser
 import platform
 import os
 
-from pref_def import *
+from lib.config import *
 
 # System Functions #
 def draw_line(pos_x, pos_y, obj_height, obj_width, canvas_color):
@@ -37,31 +38,31 @@ def signature_link():
     webbrowser.open("https://github.com/hanilr/")
 
 def feedback_link():
-    webbrowser.open("https://github.com/hanilr/Resistor-Calculator/issues")
+    webbrowser.open("https://github.com/hanilr/resistor-calculator/issues")
 
 def open_four():
     if "Windows" in platform.system():
-        os.system("python four_band.py")
+        os.system("python src/four_band.py")
     elif "Linux" in platform.system():
-        os.system("python3 four_band.py")
+        os.system("python3 src/four_band.py")
 
 def open_five():
     if "Windows" in platform.system():
-        os.system("python five_band.py")
+        os.system("python src/five_band.py")
     elif "Linux" in platform.system():
-        os.system("python3 five_band.py")
+        os.system("python3 src/five_band.py")
 
 def open_six():
     if "Windows" in platform.system():
-        os.system("python six_band.py")
+        os.system("python src/six_band.py")
     elif "Linux" in platform.system():
-        os.system("python3 six_band.py")
+        os.system("python3 src/six_band.py")
 
 def open_help():
     if "Windows" in platform.system():
-        os.system("python help.py")
+        os.system("python src/help.py")
     elif "Linux" in platform.system():
-        os.system("python3 help.py")
+        os.system("python3 src/help.py")
 
 def open_main():
     if "Windows" in platform.system():
@@ -212,3 +213,4 @@ def calc_check(calc_color, number_step):
 
     return calc_color_int
 # --------------------- #
+# MADE BY @hanilr #

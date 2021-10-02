@@ -1,3 +1,5 @@
+# RESISTOR CALCULATOR (CONFIG) #
+
 # Screen Preferences #
 main_scr = "752x260"
 help_scr = "762x510"
@@ -61,3 +63,4 @@ list_white = [90, 9, 9, 1000000000, 1, 1]
 list_gold = [0, 0, 0, 0.1, 0.05, 1]
 list_silver = [0, 0, 0, 0.01, 0.10, 1]
 # -------------------- #
+# MADE BY @hanilr #
