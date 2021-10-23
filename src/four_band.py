@@ -13,9 +13,9 @@ sys.path.append(parentdir)
 from lib.util import *
 
 # Make Choice #
-def for_four():
+def for_three():
     main_screen.destroy()
-    open_four()
+    open_three()
 
 def for_five():
     main_screen.destroy()
@@ -60,7 +60,7 @@ second_menu = make_menu("2. Step", "two", hex_two, 100, bg_menu, fg_color, 85, 1
 third_menu = make_menu("Multiplier", "multiplier", hex_multiplier, 170, bg_menu, fg_color, 143, 190, 20, 70) # Third Menu
 fourth_menu = make_menu("Tolerance", "tolerance", hex_tolerance, 240, bg_menu, fg_color, 223, 190, 20, 70) # Fourth Menu
 
-touch_button("Clear", bg_button, fg_color, for_four, 320, 20, 40, 140)
+touch_button("Three Band", bg_button, fg_color, for_three, 320, 20, 40, 140)
 touch_button("Five Band", bg_button, fg_color, for_five, 320, 70, 40, 140)
 touch_button("Six Band", bg_button, fg_color, for_six, 320, 120, 40, 140)
 touch_button("Help", bg_button, fg_color, for_help, 350, 170, 20, 80)

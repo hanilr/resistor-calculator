@@ -1,8 +1,9 @@
 # RESISTOR CALCULATOR (CONFIG) #
 
 # Screen Preferences #
-main_scr = "752x260"
-help_scr = "762x510"
+main_scr = "516x260"
+help_scr = "852x510"
+three_scr = "430x280"
 four_scr = "490x280"
 five_scr = "550x280"
 six_scr = "620x280"
@@ -50,17 +51,17 @@ list_temperature = [("Brown", hex_brown), ("Red", hex_red), ("Orange", hex_orang
 # ----------------- #
 
 # Color Value Variable #
-list_black = [0, 0, 0, 1, 1, 1]
+list_black = [0, 0, 0, 1, 1, 250]
 list_brown = [10, 1, 1, 10, 0.01, 100]
 list_red = [20, 2, 2, 100, 0.02, 50]
 list_orange = [30, 3, 3, 1000, 0.03, 15]
 list_yellow = [40, 4, 4, 10000, 0.04, 25]
-list_green = [50, 5, 5, 100000, 0.005, 1]
+list_green = [50, 5, 5, 100000, 0.005, 20]
 list_blue = [60, 6, 6, 1000000, 0.0025, 10]
-list_purple = [70, 7, 7, 10000000, 0.0010, 5]
+list_purple = [70, 7, 7, 10000000, 0.001, 5]
 list_gray = [80, 8, 8, 100000000, 0.0005, 1]
 list_white = [90, 9, 9, 1000000000, 1, 1]
 list_gold = [0, 0, 0, 0.1, 0.05, 1]
-list_silver = [0, 0, 0, 0.01, 0.10, 1]
+list_silver = [0, 0, 0, 0.01, 0.1, 1]
 # -------------------- #
 # MADE BY @hanilr #

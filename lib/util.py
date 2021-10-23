@@ -40,6 +40,12 @@ def signature_link():
 def feedback_link():
     webbrowser.open("https://github.com/hanilr/resistor-calculator/issues")
 
+def open_three():
+    if "Windows" in platform.system():
+        os.system("python src/three_band.py")
+    elif "Linux" in platform.system():
+        os.system("python3 src/three_band.py")
+
 def open_four():
     if "Windows" in platform.system():
         os.system("python src/four_band.py")
@@ -86,36 +92,46 @@ def calc_result(hex_one, hex_two, hex_three, hex_multiplier, hex_tolerance, hex_
     int_var_one = calc_check(hex_one.get(), 0)
     int_var_two = calc_check(hex_two.get(), 1)
     int_var_multiplier = calc_check(hex_multiplier.get(), 3)
-    int_var_tolerance = calc_check(hex_tolerance.get(), 4)
     
-    if detect_number == 1:
+    if detect_number == 0:
+        temp_value = (int_var_one + int_var_two) * int_var_multiplier
+        tolerance_value = temp_value * 0.2
+        min_color = temp_value - tolerance_value
+        max_color = temp_value + tolerance_value
+        result_var = min_color/1000 , "KΩ - KΩ", max_color/1000
+        value_var.set(result_var)
+
+    elif detect_number == 1:
+        int_var_tolerance = calc_check(hex_tolerance.get(), 4)
         temp_value = (int_var_one + int_var_two) * int_var_multiplier
         tolerance_value = temp_value * int_var_tolerance
         min_color = temp_value - tolerance_value
         max_color = temp_value + tolerance_value
-        result_var = min_color/1000 , "kΩ - kΩ", max_color/1000
+        result_var = min_color/1000 , "KΩ - KΩ", max_color/1000
         value_var.set(result_var)
 
     elif detect_number == 2:
+        int_var_tolerance = calc_check(hex_tolerance.get(), 4)
         int_var_three = calc_check(hex_three.get(), 2)
         temp_value = (int_var_one*10 + int_var_two*10 + int_var_three) * int_var_multiplier
         tolerance_value = temp_value * int_var_tolerance
         min_color = temp_value - tolerance_value
         max_color = temp_value + tolerance_value
-        result_var = min_color/1000 , "kΩ - kΩ", max_color/1000
+        result_var = min_color/1000 , "KΩ - KΩ", max_color/1000
         value_var.set(result_var)
 
     elif detect_number == 3:
+        int_var_tolerance = calc_check(hex_tolerance.get(), 4)
         int_var_three = calc_check(hex_three.get(), 2)
         int_var_temperature = calc_check(hex_temperature.get(), 5)
+        str_temparature = int_var_temperature, "ppm"
         temp_value = (int_var_one*10 + int_var_two*10 + int_var_three) * int_var_multiplier
         tolerance_value = temp_value * int_var_tolerance
-        temperature_value = (int_var_temperature * tolerance_value) / 1000, "Ω"
         min_color = temp_value - tolerance_value
         max_color = temp_value + tolerance_value
-        result_var = min_color/1000 , "kΩ - kΩ", max_color/1000
+        result_var = min_color/1000 , "KΩ - KΩ", max_color/1000
         value_var.set(result_var)
-        temperature_var.set(temperature_value)
+        temperature_var.set(str_temparature)
 # ------------------ #
 
 # Menu Configures #

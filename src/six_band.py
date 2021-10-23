@@ -13,6 +13,10 @@ sys.path.append(parentdir)
 from lib.util import *
 
 # Make Choice #
+def for_three():
+    main_screen.destroy()
+    open_three()
+
 def for_four():
     main_screen.destroy()
     open_four()
@@ -20,10 +24,6 @@ def for_four():
 def for_five():
     main_screen.destroy()
     open_five()
-
-def for_six():
-    main_screen.destroy()
-    open_six()
 
 def for_help():
     main_screen.destroy()
@@ -63,7 +63,7 @@ fourth_menu = make_menu("Multiplier", "multiplier", hex_multiplier, 240, bg_menu
 fifth_menu = make_menu("Tolerance", "tolerance", hex_tolerance, 310, bg_menu, fg_color, 288, 190, 20, 70) # Fifth Menu
 sixth_menu = make_menu("°C", "temperature", hex_temperature, 380, bg_menu, fg_color, 368, 190, 20, 50) # Sixth Menu
 
-touch_button("Clear", bg_button, fg_color, for_six, 450, 20, 40, 140)
+touch_button("Three Band", bg_button, fg_color, for_three, 450, 20, 40, 140)
 touch_button("Four Band", bg_button, fg_color, for_four, 450, 70, 40, 140)
 touch_button("Five Band", bg_button, fg_color, for_five, 450, 120, 40, 140)
 touch_button("Help", bg_button, fg_color, for_help, 340, 240, 20, 80)
