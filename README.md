@@ -11,42 +11,44 @@ Having some information about what it is like before buying some tools.
 I'm currently use tkinter because I'm new on oop so thats my oop test project. I'll continue with qt after that project.
 
 ## Main Screen
-When you run this program this screen first you will see.
+This is main screen, but if you want a specific one you must take a look in "/src" folder.
 
-![main](https://user-images.githubusercontent.com/77579421/116830009-2186ac80-abb0-11eb-9329-8090aec20faa.PNG)
+![main](https://user-images.githubusercontent.com/77579421/138568683-1a88add6-4bd0-40e4-af63-7be4b1a03464.png)
 
 
 ## Help Screen
-If you need help or wonder how it works, this is the screen you will see.
+If you need any help or if you wonder how it works.
 
-![help](https://user-images.githubusercontent.com/77579421/116830015-25b2ca00-abb0-11eb-91b8-2660b2b2e5a5.PNG)
+![help](https://user-images.githubusercontent.com/77579421/138568688-4e244db0-475f-436d-a4bb-3bdf379b5551.png)
+
+
+## Three Band
+In three band you need just three color because in this band you don't need a tolerance color.
+
+![three_band](https://user-images.githubusercontent.com/77579421/138568978-c37f9ac8-c660-41cc-b080-cb2a76a28d25.png)
 
 
 ## Four Band
-If your resister has four band you will use that.
+In four band you need four color. First and second one is for writing side by side third one is for multiplier fourth and last one is for tolerance.
 
-![four_band](https://user-images.githubusercontent.com/77579421/116830020-2b101480-abb0-11eb-8390-d464e75bb004.PNG)
+![four_band](https://user-images.githubusercontent.com/77579421/138568852-871fc2fd-6198-4fd7-9000-dcafb2128dad.png)
 
 
 ## Five Band
-If your resister has five band you will use that.
+In five band you need five color. This band like the four band but the third one is for side by side too.
 
-![five_band](https://user-images.githubusercontent.com/77579421/116830027-2ea39b80-abb0-11eb-8e5a-8db84a98f6c3.PNG)
+![five_band](https://user-images.githubusercontent.com/77579421/138568881-981bf4b4-d15c-4036-908b-686f9ef460b2.png)
 
 
 ## Six Band
-If your resister has six band you will use that.
+In six band you need six color. (You are getting understand how these names work.) Like the fifth one but the last color is for temperature.
 
-![six_band](https://user-images.githubusercontent.com/77579421/116830033-319e8c00-abb0-11eb-965f-7c49fba94030.PNG)
+![six_band](https://user-images.githubusercontent.com/77579421/138568939-89663b1b-e757-450d-b667-62d57ed0cf24.png)
 
 
 # Running
-### Windows
-#### Run: ` python main.py `
+### Windows: ` python main.py `
+### Linux: ` python3 main.py `
 
-### Linux: 
-#### Installing
-* Ubuntu ` sudo apt install python3-tk `
-* Fedora ` sudo dnf install python3-tkinter `
-
-#### Run: ` python3 main.py `
+## If you receive an error for tkinter in linux.
+### Pip: ` pip install tk ` or ` pip install tkinter `
