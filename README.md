@@ -41,7 +41,7 @@ In five band you need five color. This band like the four band but the third one
 
 
 ## Six Band
-In six band you need six color. (You are getting understand how these names work.) Like the fifth one but the last color is for temperature.
+In six band you need six color. (You're starting to understand how these names work!) Like the fifth one but the last color is for temperature.
 
 ![six_band](https://user-images.githubusercontent.com/77579421/138568939-89663b1b-e757-450d-b667-62d57ed0cf24.png)
 
@@ -50,5 +50,5 @@ In six band you need six color. (You are getting understand how these names work
 ### Windows: ` python main.py `
 ### Linux: ` python3 main.py `
 
-## If you receive an error for tkinter in linux.
+## If you receive an error about tkinter in linux.
 ### Pip: ` pip install tk ` or ` pip install tkinter `
