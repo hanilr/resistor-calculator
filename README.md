@@ -51,4 +51,7 @@ In six band you need six color. (You're starting to understand how these names w
 ### Linux: ` python3 main.py `
 
 ## If you receive an error about tkinter in linux.
-### Pip: ` pip install tk ` or ` pip install tkinter `
+### Debian: ` sudo apt-get install python-tk `
+### Arch: ` sudo pacman -S tk `
+### Fedora: ` sudo dnf install python3-tkinter `
+### Other Red Hat Distros: ` sudo yum install -y tkinter tk-devel `
