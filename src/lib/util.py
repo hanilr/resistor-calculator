@@ -72,9 +72,9 @@ def open_help():
 
 def open_main():
     if "Windows" in platform.system():
-        os.system("python main.py")
+        os.system("python src/main.py")
     elif "Linux" in platform.system():
-        os.system("python3 main.py")
+        os.system("python3 src/main.py")
 
 def value_keeper(vault_one, vault_two, vault_three, vault_multiplier, vault_tolerance, vault_temperature):
     think_entry(vault_one, bg_color, fg_color, 0, 290 ,10, 10)
