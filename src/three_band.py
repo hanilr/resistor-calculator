@@ -1,14 +1,6 @@
 # RESISTOR CALCULATOR (3BAND) #
-from tkinter import PhotoImage
 from tkinter import *
 import platform
-
-# DEFINE PARENT DIR AND ACCESS THE LIBRARY #
-import os, sys
-currentdir = os.path.dirname(os.path.realpath(__file__))
-parentdir = os.path.dirname(currentdir)
-sys.path.append(parentdir)
-# ---------------------------------------- #
 
 from lib.util import *
 
