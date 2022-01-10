@@ -1,5 +1,4 @@
 # RESISTOR CALCULATOR (MAIN) #
-from tkinter import PhotoImage
 from tkinter import *
 import platform
 
