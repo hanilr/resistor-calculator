@@ -13,37 +13,36 @@ I'm currently use tkinter because I'm new on oop so thats my oop test project. I
 ## Main Screen
 This is main screen, but if you want a specific one you must take a look in "/src" folder.
 
-![main](https://user-images.githubusercontent.com/77579421/138568683-1a88add6-4bd0-40e4-af63-7be4b1a03464.png)
-
+<img src="https://user-images.githubusercontent.com/77579421/138568683-1a88add6-4bd0-40e4-af63-7be4b1a03464.png" width="480">
 
 ## Help Screen
 If you need any help or if you wonder how it works.
 
-![help](https://user-images.githubusercontent.com/77579421/138568688-4e244db0-475f-436d-a4bb-3bdf379b5551.png)
+<img src="https://user-images.githubusercontent.com/77579421/138568688-4e244db0-475f-436d-a4bb-3bdf379b5551.png" width="480">
 
 
 ## Three Band
 In three band you need just three color because in this band you don't need a tolerance color.
 
-![three_band](https://user-images.githubusercontent.com/77579421/138568978-c37f9ac8-c660-41cc-b080-cb2a76a28d25.png)
+<img src="https://user-images.githubusercontent.com/77579421/138568978-c37f9ac8-c660-41cc-b080-cb2a76a28d25.png" width="480">
 
 
 ## Four Band
 In four band you need four color. First and second one is for writing side by side third one is for multiplier fourth and last one is for tolerance.
 
-![four_band](https://user-images.githubusercontent.com/77579421/138568852-871fc2fd-6198-4fd7-9000-dcafb2128dad.png)
+<img src="https://user-images.githubusercontent.com/77579421/138568852-871fc2fd-6198-4fd7-9000-dcafb2128dad.png" width="480">
 
 
 ## Five Band
 In five band you need five color. This band like the four band but the third one is for side by side too.
 
-![five_band](https://user-images.githubusercontent.com/77579421/138568881-981bf4b4-d15c-4036-908b-686f9ef460b2.png)
+<img src="https://user-images.githubusercontent.com/77579421/138568881-981bf4b4-d15c-4036-908b-686f9ef460b2.png" width="480">
 
 
 ## Six Band
 In six band you need six color. (You're starting to understand how these names work!) Like the fifth one but the last color is for temperature.
 
-![six_band](https://user-images.githubusercontent.com/77579421/138568939-89663b1b-e757-450d-b667-62d57ed0cf24.png)
+<img src="https://user-images.githubusercontent.com/77579421/138568939-89663b1b-e757-450d-b667-62d57ed0cf24.png" width="480">
 
 
 # Running
