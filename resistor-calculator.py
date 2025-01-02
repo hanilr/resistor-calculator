@@ -1,5 +1,5 @@
 # --------------------------------- #
-#  COLOR BASED RESISTOR CALCULATOR  #
+# -COLOR BASED RESISTOR CALCULATOR- #
 # -- Select colors and calculate -- #
 # -------- Made by @hanilr -------- #
 # --------------------------------- #
@@ -34,28 +34,23 @@ def main_screen():
     # Make Choice #
     def for_three():
         main_screen.destroy()
-        global scr_selection
-        scr_selection = 1
+        scr_sel(1)
     
     def for_four():
         main_screen.destroy()
-        global scr_selection
-        scr_selection = 2
+        scr_sel(2)
     
     def for_five():
         main_screen.destroy()
-        global scr_selection
-        scr_selection = 3
+        scr_sel(3)
     
     def for_six():
         main_screen.destroy()
-        global scr_selection
-        scr_selection = 4
+        scr_sel(4)
     
     def for_help():
         main_screen.destroy()
-        global scr_selection
-        scr_selection = 5
+        scr_sel(5)
     # ----------- #
     
     # Objects Preferences #
@@ -101,8 +96,7 @@ def help_screen():
     # Back To Main #
     def for_main():
         main_screen.destroy()
-        global scr_selection
-        scr_selection = 0
+        scr_sel(0)
     # ------------ #
 
     # Label Text Variables # 28
@@ -160,23 +154,19 @@ def three_screen():
     # Make Choice #
     def for_four():
         main_screen.destroy()
-        global scr_selection
-        scr_selection = 2
+        scr_sel(2)
 
     def for_five():
         main_screen.destroy()
-        global scr_selection
-        scr_selection = 3
+        scr_sel(3)
 
     def for_six():
         main_screen.destroy()
-        global scr_selection
-        scr_selection = 4
+        scr_sel(4)
 
     def for_help():
         main_screen.destroy()
-        global scr_selection
-        scr_selection = 5
+        scr_sel(5)
     # ----------- #
 
     # Main Screen Preferences #
@@ -232,23 +222,19 @@ def four_screen():
     # Make Choice #
     def for_three():
         main_screen.destroy()
-        global scr_selection
-        scr_selection = 1
+        scr_sel(1)
 
     def for_five():
         main_screen.destroy()
-        global scr_selection
-        scr_selection = 3
+        scr_sel(3)
 
     def for_six():
         main_screen.destroy()
-        global scr_selection
-        scr_selection = 4
+        scr_sel(4)
 
     def for_help():
         main_screen.destroy()
-        global scr_selection
-        scr_selection = 5
+        scr_sel(5)
     # ----------- #
 
     # Main Screen Preferences #
@@ -306,23 +292,19 @@ def five_screen():
     # Make Choice #
     def for_three():
         main_screen.destroy()
-        global scr_selection
-        scr_selection = 1
+        scr_sel(1)
 
     def for_four():
         main_screen.destroy()
-        global scr_selection
-        scr_selection = 2
+        scr_sel(2)
 
     def for_six():
         main_screen.destroy()
-        global scr_selection
-        scr_selection = 4
+        scr_sel(4)
 
     def for_help():
         main_screen.destroy()
-        global scr_selection
-        scr_selection = 5
+        scr_sel(5)
     # ----------- #
 
     # Main Screen Preferences #
@@ -382,23 +364,19 @@ def six_screen():
     # Make Choice #
     def for_three():
         main_screen.destroy()
-        global scr_selection
-        scr_selection = 1
+        scr_sel(1)
 
     def for_four():
         main_screen.destroy()
-        global scr_selection
-        scr_selection = 2
+        scr_sel(2)
 
     def for_five():
         main_screen.destroy()
-        global scr_selection
-        scr_selection = 3
+        scr_sel(3)
 
     def for_help():
         main_screen.destroy()
-        global scr_selection
-        scr_selection = 5
+        scr_sel(5)
     # ----------- #
 
     # Main Screen Preferences #
@@ -475,6 +453,6 @@ if __name__ == '__main__':
             six_screen()
         elif scr_selection == 5:
             help_screen()
-        elif scr_selection == 6:
+        else:
             break    
 # -------------- #
