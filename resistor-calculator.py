@@ -8,9 +8,19 @@ from tkinter import *
 import platform
 
 from src.lib.util import *
+from src.lib.config import *
 
-# MAIN SCREEN #
-def main_scr():
+# Global screen selection variable
+scr_selection = 0
+
+# SELECT SCREEN #
+def scr_sel(sel):
+    global scr_selection
+    scr_selection = sel
+# ------------- #
+
+# MAIN SCREEN (0) #
+def main_screen():
     # Main Screen Preferences #
     main_screen = Tk()
     main_screen.configure(bg=bg_color)
@@ -24,23 +34,28 @@ def main_scr():
     # Make Choice #
     def for_three():
         main_screen.destroy()
-        open_three()
+        global scr_selection
+        scr_selection = 1
     
     def for_four():
         main_screen.destroy()
-        open_four()
+        global scr_selection
+        scr_selection = 2
     
     def for_five():
         main_screen.destroy()
-        open_five()
+        global scr_selection
+        scr_selection = 3
     
     def for_six():
         main_screen.destroy()
-        open_six()
+        global scr_selection
+        scr_selection = 4
     
     def for_help():
         main_screen.destroy()
-        open_help()
+        global scr_selection
+        scr_selection = 5
     # ----------- #
     
     # Objects Preferences #
@@ -66,12 +81,13 @@ def main_scr():
     # ------------------- #
     
     # Mainloops #
+    main_screen.protocol("WM_DELETE_WINDOW", scr_sel(6))
     main_screen.mainloop()
     # --------- #
 # ----------- #
 
-# HELP SCREEN #
-def help_scr():
+# HELP SCREEN (5) #
+def help_screen():
     # Main Screen Preferences #
     main_screen = Tk()
     main_screen.configure(bg=bg_color)
@@ -85,7 +101,8 @@ def help_scr():
     # Back To Main #
     def for_main():
         main_screen.destroy()
-        open_main()
+        global scr_selection
+        scr_selection = 0
     # ------------ #
 
     # Label Text Variables # 28
@@ -133,28 +150,33 @@ def help_scr():
     # ------------------- #
 
     # Mainloops #
+    main_screen.protocol("WM_DELETE_WINDOW", scr_sel(6))
     main_screen.mainloop()
     # --------- #
 # ----------- #
 
-# THREE BAND SCREEN #
-def three_scr():
+# THREE BAND SCREEN (1) #
+def three_screen():
     # Make Choice #
     def for_four():
         main_screen.destroy()
-        open_four()
+        global scr_selection
+        scr_selection = 2
 
     def for_five():
         main_screen.destroy()
-        open_five()
+        global scr_selection
+        scr_selection = 3
 
     def for_six():
         main_screen.destroy()
-        open_six()
+        global scr_selection
+        scr_selection = 4
 
     def for_help():
         main_screen.destroy()
-        open_help()
+        global scr_selection
+        scr_selection = 5
     # ----------- #
 
     # Main Screen Preferences #
@@ -200,28 +222,33 @@ def three_scr():
     # ------------------- #
 
     # Mainloops #
+    main_screen.protocol("WM_DELETE_WINDOW", scr_sel(6))
     main_screen.mainloop()
     # --------- #
 # ----------------- #
 
-# FOUR BAND SCREEN #
-def four_scr():
+# FOUR BAND SCREEN (2) #
+def four_screen():
     # Make Choice #
     def for_three():
         main_screen.destroy()
-        open_three()
+        global scr_selection
+        scr_selection = 1
 
     def for_five():
         main_screen.destroy()
-        open_five()
+        global scr_selection
+        scr_selection = 3
 
     def for_six():
         main_screen.destroy()
-        open_six()
+        global scr_selection
+        scr_selection = 4
 
     def for_help():
         main_screen.destroy()
-        open_help()
+        global scr_selection
+        scr_selection = 5
     # ----------- #
 
     # Main Screen Preferences #
@@ -269,28 +296,33 @@ def four_scr():
     # ------------------- #
 
     # Mainloops #
+    main_screen.protocol("WM_DELETE_WINDOW", scr_sel(6))
     main_screen.mainloop()
     # --------- #
 # ---------------- #
 
-# FIVE BAND SCREEN #
-def five_scr():
+# FIVE BAND SCREEN (3) #
+def five_screen():
     # Make Choice #
     def for_three():
         main_screen.destroy()
-        open_three()
+        global scr_selection
+        scr_selection = 1
 
     def for_four():
         main_screen.destroy()
-        open_four()
+        global scr_selection
+        scr_selection = 2
 
     def for_six():
         main_screen.destroy()
-        open_six()
+        global scr_selection
+        scr_selection = 4
 
     def for_help():
         main_screen.destroy()
-        open_help()
+        global scr_selection
+        scr_selection = 5
     # ----------- #
 
     # Main Screen Preferences #
@@ -340,28 +372,33 @@ def five_scr():
     # ------------------- #
 
     # Mainloops #
+    main_screen.protocol("WM_DELETE_WINDOW", scr_sel(6))
     main_screen.mainloop()
     # --------- #
 # ---------------- #
 
-# SIX BAND SCREEN #
-def six_scr():
+# SIX BAND SCREEN (4) #
+def six_screen():
     # Make Choice #
     def for_three():
         main_screen.destroy()
-        open_three()
+        global scr_selection
+        scr_selection = 1
 
     def for_four():
         main_screen.destroy()
-        open_four()
+        global scr_selection
+        scr_selection = 2
 
     def for_five():
         main_screen.destroy()
-        open_five()
+        global scr_selection
+        scr_selection = 3
 
     def for_help():
         main_screen.destroy()
-        open_help()
+        global scr_selection
+        scr_selection = 5
     # ----------- #
 
     # Main Screen Preferences #
@@ -416,13 +453,28 @@ def six_scr():
     # ------------------- #
 
     # Mainloops #
+    main_screen.protocol("WM_DELETE_WINDOW", scr_sel(6))
     main_screen.mainloop()
     # --------- #
 # --------------- #
 
 # MAIN OPERATION #
 if __name__ == '__main__':
-    main_scr()
-# -------------- #
+    main_screen()
 
-# [!] Edit functions. [!] #
+    while(1):
+        if scr_selection == 0:
+            main_screen()
+        elif scr_selection == 1:
+            three_screen()
+        elif scr_selection == 2:
+            four_screen()
+        elif scr_selection == 3:
+            five_screen()
+        elif scr_selection == 4:
+            six_screen()
+        elif scr_selection == 5:
+            help_screen()
+        elif scr_selection == 6:
+            break    
+# -------------- #
