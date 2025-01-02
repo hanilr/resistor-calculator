@@ -46,8 +46,11 @@ In six band you need six color. (You're starting to understand how these names w
 
 
 # Running
-### Windows: ` python main.py `
-### Linux: ` python3 main.py `
+### Windows: ` python resistor-calculator.py `
+### Linux: ` python3 resistor-calculator.py `
+
+> If you want to test per band or screen run in `/resistor-calculator/src` directory.
+>> python3 three_band.py
 
 ## If you receive an error about tkinter in linux.
 ### Debian: ` sudo apt-get install python-tk `
