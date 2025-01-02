@@ -4,7 +4,12 @@ import webbrowser
 import platform
 import os
 
-from lib.config import *
+current_directory = os.path.basename(os.getcwd())
+
+if current_directory == "resistor-calculator":
+    from src.lib.config import *
+elif current_directory == "src":
+    from lib.config import *
 
 # System Functions #
 def draw_line(pos_x, pos_y, obj_height, obj_width, canvas_color):
